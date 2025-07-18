@@ -1,35 +1,40 @@
-Fraud Analysis Project
-📊 Project Overview
-This project focuses on fraud detection through transactional data analysis. It applies fundamental data analysis techniques and machine learning models to identify factors associated with fraudulent behavior and to build a predictive system for early fraud detection.
+# Fraud Analysis Report
 
-📝 Notebook Contents
-Exploratory Data Analysis (EDA): Analyze data distribution, identify anomalies, and understand key variables.
+## 📊 Project Overview
+This project performs a fraud detection analysis on transaction data, focusing on identifying the top regions with the highest fraud transaction volumes and applying machine learning models to predict fraudulent activities.
 
-Data Preprocessing: Data cleaning, handling missing values, encoding categorical variables, and balancing the dataset if necessary.
+## 📝 Notebook Highlights
+- **Data Loading & Preprocessing:**
+    - Merged multiple datasets including user, card, transaction, and merchant information.
+    - Cleaned and prepared the data for analysis.
 
-Model Building: Experiment with machine learning models such as Logistic Regression, Random Forest, XGBoost, etc.
+- **Exploratory Data Analysis (EDA):**
+    - Identified **Top 3 U.S. States** with the highest number of fraudulent transactions: **Ohio, California, and Texas**.
+    - Performed in-depth transaction analysis per state.
 
-Model Evaluation: Evaluate model performance using metrics like Accuracy, Precision, Recall, F1-score, and ROC-AUC.
+- **Modeling Fraud Detection:**
+    - Built **XGBoost classification models** specifically for the top three states.
+    - Evaluated models using common classification metrics (accuracy, recall, F1-score).
 
-Conclusion: Summarize findings and model performance, along with key takeaways.
+- **Key Observations:**
+    - Focused on demographic features (age, gender), transaction amount, and region-based segmentation.
+    - XGBoost model demonstrated high performance in fraud classification tasks.
 
-🛠️ Tools and Libraries
-Python 3
+## 🛠️ Tools and Libraries Used
+- Python (pandas, numpy, matplotlib, seaborn)
+- Machine Learning: scikit-learn, XGBoost
+- Visualization: matplotlib, seaborn
 
-Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, imblearn
 
-📁 Project Structure
-Copy
-Edit
-📁 project-root/
- ├── Fraud Analysis.ipynb
- └── README.md
-⚠️ Notes
-The dataset is not included with this notebook. Please use your own dataset or adjust the code accordingly.
+## ⚠️ Notes
+- The notebook processes multiple datasets including users, cards, transactions, and merchant category codes (MCC).
+- This project focuses specifically on three U.S. states with the highest reported fraud activity.
+- Dataset files are not included and should be prepared according to the data loading sections in the notebook.
 
-Model performance may vary depending on the dataset and preprocessing methods applied.
+## 💡 Objectives
+✅ Identify high-fraud regions  
+✅ Conduct exploratory data analysis (EDA)  
+✅ Build machine learning models for fraud detection  
+✅ Evaluate model performance on selected regions
 
-💡 Project Goals
-✅ Understand the characteristics of fraud-related data
-✅ Apply fundamental data analysis and visualization techniques
-✅ Build and evaluate machine learning models for fraud detection
+
